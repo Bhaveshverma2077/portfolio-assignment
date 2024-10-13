@@ -1,0 +1,72 @@
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: move 10s linear infinite;
+}
+
+.circle1 {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.circle2 {
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  left: 40%;
+  animation-delay: 2s;
+}
+
+.circle3 {
+  width: 80px;
+  height: 80px;
+  top: 80%;
+  left: 70%;
+  animation-delay: 4s;
+}
+
+.line {
+  position: absolute;
+  width: 26px;
+  height: 5px;
+  animation: moveLine 16s linear infinite;
+}
+
+.line1 {
+  top: 20%;
+  left: 80%;
+  animation-delay: 0s;
+}
+
+.line2 {
+  top: 20%;
+  left: 80%;
+  animation-delay: 4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveLine {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 50% {
+    transform: rotate(360deg);
+  } */
+  100% {
+    transform: rotate(360deg);
+  }
+}
